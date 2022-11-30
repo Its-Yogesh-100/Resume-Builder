@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,25 +18,100 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
+
+
   <body>
     <div class="container">
-
       <h1 class="text-center">Resume Generator</h1>
 
       <div class="row">
-
         <div class="col-md-6">
+
           <h3>Personal Information</h3>
 
-          <div class="form-group">
-              <label for="nameField" id="nameField">Your name</label>
-              <input type="text"  id="name" class="form-control" placeholder="Enter Your Name">
+          <div class="form-group mt-2">
+            <label for="nameField">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Enter Your Name"
+            />
           </div>
 
+          <div class="form-group">
+            <label for="contactField">Contact</label>
+            <input
+              type=""
+              id="name"
+              class="form-control"
+              placeholder="Enter Your Name"
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="addressField">Address</label>
+            <textarea
+              id="addressField"
+              class="form-control"
+              placeholder="Enter Your Address"
+              rows="5"
+            ></textarea>
+
+            <p class="text-secondary my-3">Important Links</p>
+
+            <div class="form-group mt-2">
+              <label for="instaField" >Instagram</label>
+              <input
+                id="instaField"
+                class="form-control"
+                placeholder="Enter here"
+              ></input>
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="fbField" >Facebook</label>
+                <input
+                  id="fbField"
+                  class="form-control"
+                  placeholder="Enter here"
+                ></input>
+                </div>
+
+                <div class="form-group">
+                  <label for="linkdenField" >LinkedIN</label>
+                  <input
+                    id="linkdenField"
+                    class="form-control"
+                    placeholder="Enter here"
+                  ></input>
+                  </div>
+          </div>
         </div>
 
         <div class="col-md-6">
           <h3>Professiona Information</h3>
+
+          <div class="form-group">
+            <label for="addressField">Objective</label>
+            <textarea
+              id="addressField"
+              class="form-control"
+              placeholder="Enter Your Address"
+              rows="5"
+            ></textarea>
+
+
+            <div class="form-group">
+              <label for="addressField">Work Experience</label>
+              <textarea
+                id="addressField"
+                class="form-control weField"
+                placeholder="Enter Your Address"
+              ></textarea>
+
 
 
         </div>
@@ -46,7 +122,8 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
 
     <script src="script.js"></script>
   </body>
