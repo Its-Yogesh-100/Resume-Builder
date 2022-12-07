@@ -43,10 +43,60 @@ function generateCV() {
 
      //WORK EXPERIENCE
 
-     let wes=document.getElementById('weField');
+     let wes=document.getElementsByClassName('weField');
 
-     let str=''
+     let str="";
 
+     for(let e of wes)
+     {
+        str=str+`<li>${e.value}</li>`;
+     }
+
+     document.getElementById("weT").innerHTML=str;
+
+
+     //Academic Qualification
+
+     let aqs=document.getElementsByClassName('eqField');
+
+     let str1="";
+
+     for(let e of aqs)
+     {
+        str1=str1+`<li>${e.value}</li>`;
+     }
+
+     document.getElementById("aqT").innerHTML=str1;
+
+
+     //SETTING PROFILE PHOTO
+
+     let file=document.getElementById('imgField').files[0];
+
+     let reader=new FileReader();
+     reader.readAsDataURL(file);
+
+     reader.onloadend=function(){
+     document.getElementById('imgTemplate').src=reader.result;};
+
+
+
+     //hiding the form things
+
+    // form hide after filling info
+     document.getElementById('cv-form').style.display="none";
+
+     // template
+     document.getElementById('cv-template').style.display="block";
+
+
+
+    }
+     //print cv
+
+     function printCV(){
+        window.print();
+
+     }
 
     
-}
