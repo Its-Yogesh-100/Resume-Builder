@@ -35,7 +35,7 @@
             <label for="nameField">Name</label>
             <input
               type="text"
-              id="name"
+              id="nameField"
               class="form-control"
               placeholder="Enter Your Name"
             />
@@ -44,8 +44,8 @@
           <div class="form-group">
             <label for="contactField">Contact</label>
             <input
-              type=""
-              id="name"
+              type="text"
+              id="contactField"
               class="form-control"
               placeholder="Enter Your Name"
             />
@@ -92,13 +92,15 @@
           </div>
         </div>
 
+        <!-- Professional Information -->
+
         <div class="col-md-6">
           <h3>Professiona Information</h3>
 
           <div class="form-group">
-            <label for="addressField">Objective</label>
+            <label for="">Objective</label>
             <textarea
-              id="addressField"
+              id="objectiveField"
               class="form-control"
               placeholder="Enter Your Address"
               rows="5"
@@ -108,6 +110,7 @@
             <div class="form-group">
               <label >Work Experience</label>
               <textarea
+  
                 class="form-control weField"
                 placeholder="Enter Your Address"
                 rows="5"
@@ -128,7 +131,7 @@
             <div class="form-group">
               <label >Academic Qualifications</label>
               <textarea
-                class="form-control EQField"
+                class="form-control eqField"
                 placeholder="Enter here"
                 rows="5"
               ></textarea>
@@ -147,10 +150,10 @@
       </div>
     </div>
 
-    <!--ADding button fuctionality-->
+    <!--GENERATE CV BUTTON-->
 
     <div class="container text-center mt-3">
-      <button class="btn btn-primary text-center">
+      <button onclick="generateCV()" class="btn btn-primary text-center">
 
         Generate CV
       </button>
@@ -169,21 +172,21 @@
       <div class="row">
 
         <!-- FIRST COLUMN -->
-        <div class="col-md-4 text-center ">
+        <div class="col-md-3 text-center ">
 
           <!-- Profile image -->
           <img src="profile.png" alt="" class="img-fluid myimg">
        
           <div class="container ">
-            <p>YOGESH KAUSHIK</p>
-            <P>+9826847567</P>
-            <p>SECTOR 3 NOIDA</p>
+            <p id="nameT1">YOGESH KAUSHIK</p>
+            <P id="contactT">+9826847567</P>
+            <p class="addressT">SECTOR 3 NOIDA</p>
 
             <hr color="black"/>
 
-            <p><a href="#1">https://www.youtube.com/</a></p>
-            <p><a href="#1">https://www.youtube.com/</a></p>
-            <p><a href="#1">https://www.youtube.com/</a></p>
+            <p><a id="fbT" href="#1">https://www.youtube.com/</a></p>
+            <p><a id="instaT" href="#1">https://www.youtube.com/</a></p>
+            <p><a id="linkedT" href="#1">https://www.youtube.com/</a></p>
 
           </div>
        
@@ -192,7 +195,7 @@
         <!-- SECOND COLUMN -->
         <div class="col-md-8 py-5">
 
-          <h1 class="text-center" style="font-weight:980;">Yogesh Kaushik</h1>
+          <h1 id="nameT2" class="text-center" style="font-weight:980;">Yogesh Kaushik</h1>
 
          <!-- Objective card -->
          <div class="card mt-4 ">
@@ -200,7 +203,7 @@
             <h3>Objective</h3>
           </div>
           <div class="card-body">
-            <p>
+            <p id="objectiveT">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur eius minima magni nobis facere reprehenderit recusandae, sed aspernatur quam dignissimos voluptatem quis expedita officia ipsam quod dicta ullam officiis labore ad animi? Maxime deserunt quasi labore corporis itaque adipisci, ab nam quisquam neque veritatis sit voluptate, suscipit praesentium odio.
             </p>
           </div>
@@ -214,7 +217,7 @@
           </div>
           <div class="card-body">
            
-            <ul>
+            <ul id="weT">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.</li>
             </ul>
 
@@ -238,7 +241,7 @@
           </div>
           <div class="card-body">
            
-            <ul>
+            <ul id="aqT">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.</li>
             </ul>
 
@@ -251,6 +254,12 @@
             </ul>
 
           </div>
+         </div>
+
+         <!-- CV PRINT -->
+
+         <div class="container mt-3 text-center">
+          <button onclick="printCV()" class="btn background">Print CV</button>
          </div>
 
 
