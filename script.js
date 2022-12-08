@@ -177,7 +177,7 @@ function generateCV() {
 
      for(let e of skillp)
      {
-        str4=str4+`<li>${e.value}</li><br>`;
+        str4=str4+`<li>${e.value}</li>`;
      }
 
      document.getElementById("ST").innerHTML=str4;
