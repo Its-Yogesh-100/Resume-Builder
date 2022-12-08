@@ -1,4 +1,5 @@
 
+//  SKILL FIELD INPUT
 function addNewSkillField(){
 
    let newNode=document.createElement('textarea');
@@ -19,7 +20,7 @@ function addNewSkillField(){
 
 
 
-
+//WORK FIELD
 
 function addNewWeField(){
 
@@ -39,6 +40,7 @@ function addNewWeField(){
 }
 
 
+// ACADEMIC QUALIFICATION FIELD
 function addNewaqField(){
 
    let newNode=document.createElement('textarea');
@@ -165,6 +167,20 @@ function generateCV() {
 
      reader.onloadend=function(){
      document.getElementById('imgTemplate').src=reader.result;};
+
+
+     // SKILL FILED OUTPUT
+
+     let skillp=document.getElementsByClassName('skillF');
+
+     let str4="";
+
+     for(let e of skillp)
+     {
+        str4=str4+`<li>${e.value}</li><br>`;
+     }
+
+     document.getElementById("ST").innerHTML=str4;
 
 
 
