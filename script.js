@@ -56,6 +56,23 @@ function addNewaqField(){
    aqOb.insertBefore(newNode,aqAddButtonOb);
 }
 
+// PROJECT FILED
+function addNewPField(){
+
+   let newNode=document.createElement('textarea');
+   newNode.classList.add('form-control');
+   newNode.classList.add('PField');
+
+   newNode.classList.add("mt-2");
+
+   newNode.setAttribute('rows',2);
+   newNode.setAttribute("placeholder","Enter here");
+
+   let pOb=document.getElementById("PF");
+   let pAddButtonOb=document.getElementById("PButton");
+
+   pOb.insertBefore(newNode,pAddButtonOb);
+}
 
 
 
@@ -123,6 +140,20 @@ function generateCV() {
      }
 
      document.getElementById("aqT").innerHTML=str1;
+
+
+   //PROJECTS
+
+     let ps=document.getElementsByClassName('PField');
+
+     let str3="";
+
+     for(let e of ps)
+     {
+        str3=str3+`<li>${e.value}</li>`;
+     }
+
+     document.getElementById("pT").innerHTML=str3;
 
 
      //SETTING PROFILE PHOTO
