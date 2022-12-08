@@ -29,37 +29,40 @@
         
         <div class="col-md-6">
 
+<!-- PERSONAL INFORMATION -->
+
           <h3>Personal Information</h3>
 
-          <div class="form-group mt-2">
-            <label for="nameField">Name</label>
+    <!-- NAME FILED -->
+          <div class="form-group mt-3">
+            <label for="nameField ">Name</label>
             <input
               type="text"
               id="nameField"
-              class="form-control"
+              class="form-control mt-2"
               placeholder="Enter Your Name"
             />
           </div>
 
 <!-- CONTACT FIELD -->
 
-          <div class="form-group">
+          <div class="form-group mt-2">
             <label for="contactField">Contact</label>
             <input
               type="text"
               id="contactField"
-              class="form-control"
+              class="form-control mt-2"
               placeholder="Enter Your Name"
             />
           </div>
 
 <!-- ADDRESS FIELD  -->
 
-          <div class="form-group">
+          <div class="form-group mt-2">
             <label for="addressField">Address</label>
             <textarea
               id="addressField"
-              class="form-control"
+              class="form-control mt-2"
               placeholder="Enter Your Address"
               rows="5"
             ></textarea>
@@ -67,13 +70,13 @@
 <!-- PHOTO FIELD -->
             <div class="form-group mt-3">
               <label for="">Select your photo</label>
-              <input ID="imgField"type="file" class="form-control">
+              <input ID="imgField"type="file" class="form-control mt-2">
             </div>
 
 <!-- IMPORTANT LINKS -->
 
 
-            <p class="text-secondary my-3">Important Links</p>
+           <h3> <p class="text-secondary my-3">Important Links</p></h3>
 
 
     <!-- INSTAGRAM FILED -->
@@ -82,7 +85,7 @@
               <label for="instaField" >Instagram</label>
               <input
                 id="instaField"
-                class="form-control"
+                class="form-control mt-2"
                 placeholder="Enter here"
               ></input>
               </div>
@@ -92,22 +95,61 @@
                 <label for="fbField" >Facebook</label>
                 <input
                   id="fbField"
-                  class="form-control"
+                  class="form-control mt-2"
                   placeholder="Enter here"
                 ></input>
                 </div>
 
     <!-- LINKEDIN FIELD -->
-                <div class="form-group">
+                <div class="form-group mt-2">
                   <label for="linkdenField" >LinkedIN</label>
                   <input
                     id="linkdenField"
-                    class="form-control"
+                    class="form-control mt-2"
                     placeholder="Enter here"
                   ></input>
                   </div>
+
+      <!-- SKILLS -->
+
+
+         <h3> <p class="text-secondary my-2">Skills</p></h3> 
+
+
+<!-- Skills field -->
+
+        <div class="form-group mt-0" id="skillf">
+                  <label for="linkdenField" ></label>
+                  <input
+                    class="form-control mt-0 skillField"
+                    placeholder="Enter here"
+                  ></input>
+      
+<!-- BUTTON FUNCTIONALITY -->
+                  
+                <div class="container text-center mt-1" id="skillButton">
+                  <button onclick="addNewSkillField()" class="btn btn-primary btn-sm">
+                   Add
+                  </button>
+               </div>
+           </div>
+
+
+            
+        
+
+  
+    
+
+
           </div>
         </div>
+
+
+
+
+
+
 
 <!-- Professional Information -->
 
@@ -118,23 +160,23 @@
             <label for="">Objective</label>
             <textarea
               id="objectiveField"
-              class="form-control"
+              class="form-control mt-2"
               placeholder="Enter Your Address"
               rows="5"
             ></textarea>
 
-            <!-- Work EXPERINCE -->
+<!-- Work EXPERINCE -->
 
-            <div class="form-group" id="we">
+            <div class="form-group mt-2" id="we">
               <label >Work Experience</label>
               <textarea
   
-                class="form-control weField"
+                class="form-control weField mt-2"
                 placeholder="Enter here"
                 rows="5"
               ></textarea>
               
-              <!-- ADDING BUTTON FUNCTIONALITY-->
+  <!-- ADDING BUTTON FUNCTIONALITY-->
 
                 <div class="container text-center mt-3" id="weButton">
                    <button onclick="addNewWeField()" class="btn btn-primary btn-sm">
@@ -143,13 +185,13 @@
                 </div>
             </div>
 
-            <!--aDDING Academic Qualifications-->
+<!--aDDING Academic Qualifications-->
 
 
-            <div class="form-group" id="aq">
+            <div class="form-group mt-2" id="aq">
               <label >Academic Qualifications</label>
               <textarea
-                class="form-control eqField"
+                class="form-control eqField mt-2"
                 placeholder="Enter here"
                 rows="5"
               ></textarea>
@@ -181,18 +223,18 @@
     </div>
 
 
-    <!-- CV Template -->
+<!-- CV Template -->
 
-    <div class="container" id="cv-template">
+    <div class="container mt-4" id="cv-template">
 
-      <h1>This is template</h1>
+      
 
       <div class="row">
 
         <!-- FIRST COLUMN -->
-        <div class="col-md-4 text-center ">
+        <div class="col-md-3 text-center ">
 
-          <!-- Profile image -->
+<!-- Profile image -->
           <img src="profile.png" alt="" class="img-fluid myimg" id="imgTemplate">
        
           <div class="container ">
@@ -222,7 +264,6 @@
           </div>
           <div class="card-body">
             <p id="objectiveT">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur eius minima magni nobis facere reprehenderit recusandae, sed aspernatur quam dignissimos voluptatem quis expedita officia ipsam quod dicta ullam officiis labore ad animi? Maxime deserunt quasi labore corporis itaque adipisci, ab nam quisquam neque veritatis sit voluptate, suscipit praesentium odio.
             </p>
           </div>
          </div>
@@ -236,22 +277,13 @@
           <div class="card-body">
            
             <ul id="weT">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.</li>
+              <li></li>
             </ul>
-
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.</li>
-            </ul>
-
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.</li>
-            </ul>
-
           </div>
          </div>
 
 
-         <!-- Academics Qualification -->
+   <!-- Academics Qualification -->
 
          <div class="card mt-4 ">
           <div class="card-header background">
@@ -260,21 +292,12 @@
           <div class="card-body">
            
             <ul id="aqT">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.</li>
+              <li></li>
             </ul>
-
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.</li>
-            </ul>
-
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.</li>
-            </ul>
-
           </div>
          </div>
 
-         <!-- CV PRINT -->
+ <!-- CV PRINT -->
 
          <div class="container mt-3 text-center">
           <button onclick="printCV()" class="btn background">Print CV</button>

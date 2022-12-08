@@ -1,4 +1,26 @@
 
+function addNewSkillField(){
+
+   let newNode=document.createElement('textarea');
+   newNode.classList.add('form-control');
+   newNode.classList.add('skillField');
+
+   newNode.classList.add("mt-2");
+
+   newNode.setAttribute('rows',1);
+   newNode.setAttribute("placeholder","Enter here");
+
+   let skillOb=document.getElementById("skillf");
+   let skillAddButtonOb=document.getElementById("skillButton");
+
+   skillOb.insertBefore(newNode,skillAddButtonOb);
+}
+
+
+
+
+
+
 function addNewWeField(){
 
    let newNode=document.createElement('textarea');
