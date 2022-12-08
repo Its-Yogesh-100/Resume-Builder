@@ -6,7 +6,7 @@
 
 
 
-.col-md-3{
+.col-md-4{
 
     background-color:red;
 }
@@ -19,5 +19,5 @@
 
 
 .background{
-    background-color: greenyellow;
+    background-color: rgb(13, 239, 197);
 }

@@ -112,7 +112,7 @@
 <!-- Professional Information -->
 
         <div class="col-md-6">
-          <h3>Professiona Information</h3>
+          <h3>Professional Information</h3>
 
           <div class="form-group">
             <label for="">Objective</label>
@@ -125,19 +125,19 @@
 
             <!-- Work EXPERINCE -->
 
-            <div class="form-group">
+            <div class="form-group" id="we">
               <label >Work Experience</label>
               <textarea
   
                 class="form-control weField"
-                placeholder="Enter Your Address"
+                placeholder="Enter here"
                 rows="5"
               ></textarea>
               
               <!-- ADDING BUTTON FUNCTIONALITY-->
 
                 <div class="container text-center mt-3" id="weButton">
-                   <button class="btn btn-primary btn-sm">
+                   <button onclick="addNewWeField()" class="btn btn-primary btn-sm">
                     Add
                    </button>
                 </div>
@@ -146,7 +146,7 @@
             <!--aDDING Academic Qualifications-->
 
 
-            <div class="form-group">
+            <div class="form-group" id="aq">
               <label >Academic Qualifications</label>
               <textarea
                 class="form-control eqField"
@@ -157,7 +157,7 @@
               <!-- ADDING BUTTON FUNCTIONALITY-->
 
                 <div class="container text-center mt-3" id="aqButton">
-                   <button class="btn btn-primary btn-sm">
+                   <button onclick="addNewaqField()" class="btn btn-primary btn-sm">
                     Add
                    </button>
                 </div>
@@ -190,7 +190,7 @@
       <div class="row">
 
         <!-- FIRST COLUMN -->
-        <div class="col-md-3 text-center ">
+        <div class="col-md-4 text-center ">
 
           <!-- Profile image -->
           <img src="profile.png" alt="" class="img-fluid myimg" id="imgTemplate">
@@ -299,3 +299,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
